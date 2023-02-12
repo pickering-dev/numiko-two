@@ -1,15 +1,9 @@
-// add event listener to each link
-const links = document.querySelectorAll("nav a");
-links.forEach((link) => {
-	link.addEventListener("click", updateProgressBar);
-});
-
 // update progress bar width
 function updateProgressBar(event) {
 	const links = Array.from(document.querySelectorAll("nav a"));
 	const index = links.indexOf(event.target);
 	const progressBar = document.querySelector(".bar-progress");
-	const width = (index + 0) * 25; // Assumes 5 links with equal width
+	const width = index * 20 - 1;
 
 	progressBar.style.width = `${width}%`;
 }
