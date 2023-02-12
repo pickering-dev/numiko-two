@@ -16,4 +16,5 @@ function updateProgressBarOnScroll() {
 		document.documentElement.scrollHeight - window.innerHeight;
 	const width = (scrollPosition / totalHeight) * 100;
 	progressBar.style.width = `${width}%`;
+	// console.log(scrollPosition);
 }
