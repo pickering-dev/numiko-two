@@ -9,10 +9,10 @@ function updateProgressBar(event) {
 	const links = Array.from(document.querySelectorAll("nav a"));
 	const index = links.indexOf(event.target);
 	const progressBar = document.querySelector(".bar-progress");
-	const width = (index + 1) * 20; // Assumes 5 links with equal width
+	const width = (index + 0) * 25; // Assumes 5 links with equal width
+
 	progressBar.style.width = `${width}%`;
 }
-
 // do the same thing but with a scroll event listener
 window.addEventListener("scroll", updateProgressBarOnScroll);
 function updateProgressBarOnScroll() {

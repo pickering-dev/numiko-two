@@ -1,20 +1,38 @@
 header {
 	position: fixed;
 	width: 100%;
+	background-color: #04151f;
+	h1 {
+		text-align: center;
+		margin: 20px 0;
+	}
 	nav {
 		ul {
 			display: flex;
 			justify-content: space-evenly;
 			list-style: none;
+			margin-bottom: 20px;
+			li {
+				a {
+					text-decoration: none;
+					color: #c44900;
+					font-size: 1.5rem;
+					font-weight: 700;
+					&:hover {
+						color: #183a37;
+					}
+				}
+			}
 		}
 	}
 	.progress-bar {
-		background-color: #cecece;
+		background-color: black;
 		height: 5px;
 		width: 100%;
 		.bar-progress {
-			background-color: #030206;
+			background-color: #c44900;
 			height: 5px;
+			transition: all 0.1s ease-in;
 			width: 0;
 		}
 	}
