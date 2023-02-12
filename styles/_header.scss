@@ -1,0 +1,21 @@
+header {
+	position: fixed;
+	width: 100%;
+	nav {
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+		}
+	}
+	.progress-bar {
+		background-color: #cecece;
+		height: 5px;
+		width: 100%;
+		.bar-progress {
+			background-color: #030206;
+			height: 5px;
+			width: 0;
+		}
+	}
+}
